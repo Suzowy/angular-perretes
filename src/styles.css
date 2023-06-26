@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat+Alternates:ital@1&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat+Alternates:ital@1&family=Satisfy&display=swap");
+
+h1 {
+  font-family: "Indie Flower", cursive;
+  font-size: 50px;
+  font-weight: 800;
+  color: #ff728bff;
+  margin: 10px 0;
+}
+h2 {
+  font-family: "Indie Flower", cursive;
+  font-size: 30px;
+  font-weight: 600;
+  color: #ff728bff;
+  margin: 10px 0;
+}
+
+p {
+  font-family: "Indie Flower", cursive;
+  color: rgb(36, 118, 135);
+  font-size: 20px;
+}
+
+span {
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+  font-weight: 500;
+}
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: #c8e1ea;
+  color: rgb(0, 0, 0);
+}
+
+.toolbar img {
+  width: 100px;
+  margin: 0 16px;
+}
+
+.content {
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+svg.material-icons {
+  height: 30px;
+  width: 30px;
+}
+
+svg.material-icons:not(:last-child) {
+  margin-right: 8px;
+}
+
+.card svg.material-icons path {
+  fill: #0ed2ec;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.card {
+  all: unset;
+  border-radius: 4px;
+  border: 2px solid #01fefe;
+  height: 200px;
+  width: 300px;
+  margin: 0 8px 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  line-height: 24px;
+}
+
+.card-container .card:not(:last-child) {
+  background-image: url(https://img.freepik.com/vector-premium/doodle-perros-arte-lineal-colorear-ilustracion-libros_40453-2360.jpg);
+  margin-right: 3;
+}
+
+.card.card-small {
+  height: auto;
+  width: 100px;
+}
+
+.card-container .card:not(.highlight-card) {
+  background-image: url(https://img.freepik.com/vector-premium/doodle-perros-arte-lineal-colorear-ilustracion-libros_40453-2360.jpg);
+  margin-right: 3;
+  cursor: pointer;
+
+}
+
+.card-container .card:not(.highlight-card):hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 10px #7e607eff;
+}
+
+.card-container .card:not(.highlight-card):hover .material-icons path {
+  fill: #ff728bff;
+}
+
+.card.highlight-card {
+  background-color: #755b75;
+  color: white;
+  border: none;
+  width: 100%;
+justify-content: center;
+}
+
+.card.card.highlight-card span {
+  color: rgb(255, 255, 255);
+  border-radius: 2px;
+  margin: 20px;
+}
+
+.circle-link {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  margin: 8px;
+  background-color: #1bd741ff;
+  color: rgb(0, 0, 0);
+  border: 2px solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 10);
+  transition: 1s ease-out;
+}
+
+.card-container #twitter-logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  margin: 8px;
+  background-color: #1d9bf0ff;
+  color: rgb(0, 0, 0);
+  border: 2px solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 10);
+  transition: 1s ease-out;
+}
+
+.card-container #youtube-logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  margin: 8px;
+  background-color: #ff0000ff;
+  color: rgb(0, 0, 0);
+  border: 2px solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 10);
+  transition: 1s ease-out;
+}
+.circle-link:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0px 10px 7px #1bd741ff;
+}
+.card-container #twitter-logo:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0px 10px 7px #1d9bf0ff;
+}
+.card-container #youtube-logo:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0px 10px 7px #ff0000ff;
+}
+
+footer a {
+  background-color: #c8e1eaff;
+  padding: 40px;
+  width: 100%;
+  color: #7e607eff;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.github-star-badge {
+  color: #6afb02;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding: 3px 10px;
+  border: 1px solid #1bd741ff;
+  border-radius: 3px;
+  background-color: white;
+  margin-left: 4px;
+  font-weight: 600;
+}
+.github-star-badge:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0px 2px 10px rgb(19, 252, 2);
+  background-color: #000000;
+}
+
+/* Responsive */
+@media screen and (max-width: 767px) {
+  .card-container {
+    width: 100%;
+  }
+  .card-container .card:not(.highlight-card) {
+    background-image: none;
+  }
+
+  .card:not(.highlight-card) {
+    height: 15px;
+    margin: 10px 0;
+  }
+
+}
