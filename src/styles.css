@@ -16,6 +16,14 @@ h2 {
   color: #ff728bff;
   margin: 10px 0;
 }
+h3 {
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ff728bff;
+  margin: 10px 0;
+}
+
 
 p {
   font-family: "Indie Flower", cursive;
@@ -230,5 +238,11 @@ footer a {
   .card:not(.highlight-card) {
     height: 15px;
     margin: 10px 0;
+  }
+  h1{
+    font-size: 30px;
+  }
+  span{
+font-size: 20px;
   }
 }

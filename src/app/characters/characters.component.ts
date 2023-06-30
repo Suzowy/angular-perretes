@@ -18,7 +18,7 @@ export class CharactersComponent implements OnInit {
   }
 
   getDogImages() {
-    const url = 'https://dog.ceo/api/breeds/image/random/5';
+    const url = 'https://dog.ceo/api/breeds/image/random/50';
 
     this.http.get<any>(url).subscribe(data => {
       if (data && data.status === 'success') {

@@ -1,1 +1,19 @@
 
+.content {
+  display: flex;
+  padding: 200px 16px;
+  max-width: 960px;
+  flex-direction: column;
+  background-color: rgb(235, 241, 239);
+  background-repeat: no-repeat;
+  background-position: left;
+  font-family: "Indie Flower", cursive;
+
+}
+h2{
+margin: 30px;
+padding: 30px;
+}
+
+
+@media screen and (max-width: 767px) {}

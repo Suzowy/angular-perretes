@@ -1,2 +1,29 @@
- <p>Contacto works!</p>
 
+<div class="content">
+  <h3>contacta con nosotros</h3>
+ <form class="form" (ngSubmit)="registrar()" #registroForm="ngForm">
+  <div class="mb-3">
+    <label for="nombre" class="form-label">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" class="form-control"[(ngModel)]="nombre" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="email" class="form-label">Email:</label>
+    <input type="email" id="email" name="email" class="form-control"[(ngModel)]="email" required>
+  </div>
+
+  <div class="mb-3">
+    <label for="telefono" class="form-label">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" class="form-control"[(ngModel)]="telefono" required>
+  </div>
+
+
+  <div class="mb-3">
+    <label for="mensaje" class="form-label">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" class="form-control"[(ngModel)]="mensaje"></textarea>
+  </div>
+
+
+  <button type="submit" class="btn btn-outline-info" (click)="!registroForm.form.valid">Enviar</button>
+</form>
+</div>
