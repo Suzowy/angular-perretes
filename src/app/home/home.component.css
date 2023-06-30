@@ -1,0 +1,11 @@
+body{
+  background-image: url(https://img.freepik.com/vector-premium/doodle-perros-arte-lineal-colorear-ilustracion-libros_40453-2360.jpg);
+  background-position:center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+
+  body{
+    background-image: none;
+  }}

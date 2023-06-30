@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Perretes';
+  showLoginForm: boolean = false;
+  toggleLoginForm() {
+    this.showLoginForm = !this.showLoginForm;
+  }
 }
