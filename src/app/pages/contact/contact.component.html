@@ -1,7 +1,7 @@
 
 <div class="content">
   <h3>contacta con nosotros</h3>
- <form class="form" (ngSubmit)="registrar()" #registroForm="ngForm">
+  <form class="form" (ngSubmit)="registrar()" #registroForm="ngForm">
   <div class="mb-3">
     <label for="nombre" class="form-label">Nombre:</label>
     <input type="text" id="nombre" name="nombre" class="form-control"[(ngModel)]="nombre" required>
@@ -23,7 +23,12 @@
     <textarea id="mensaje" name="mensaje" class="form-control"[(ngModel)]="mensaje"></textarea>
   </div>
 
-
-  <button type="submit" class="btn btn-outline-info" (click)="!registroForm.form.valid">Enviar</button>
+  <button type="submit" class="btn btn-outline-info" [disabled]="!registroForm.form.valid">
+    Enviar
+  </button>
 </form>
+
+<div *ngIf="mensajeEnviado" class="mensaje">
+  Gracias por tu mensaje, en breve nos pondremos en contacto contigo.
+</div>
 </div>

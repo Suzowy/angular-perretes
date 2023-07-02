@@ -1,10 +1,9 @@
 
 
-.nav{
-display: flex;
-justify-content: space-between;
-margin-right: 10px;
-padding: 10px;
-background-color: #c8e1eaff;
-
+.nav-item{
+  display: flex;
+  margin-right: 10px;
+  padding: 10px;
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
 }

@@ -1,18 +1,18 @@
 
 .content {
   display: flex;
-  margin: 82px auto 10px;
-  padding: 150px 16px;
   max-width: 960px;
   flex-direction: column;
   color: rgb(73, 73, 73);
   align-items: first baseline;
   background-image: url(src\assets\images\corazon.png);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
+  background-size: contain;
   font-family: "Indie Flower", cursive;
   font-weight: bold;
 }
+
 h3{
 padding: 30px;
 }
@@ -20,8 +20,7 @@ padding: 30px;
 @media screen and (max-width: 767px) {
  .content {
   background-image: url(src\assets\images\perro4.png);
-  background-position: left;
-
-  }
-
+  background-position:left;
+  background-size:cover;
+ }
 }

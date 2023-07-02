@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class LoginComponent {
   username: string;
   password: string;
-  loggedInUser: string;
+  loggedInUser: string = '';
 
   constructor() {
     this.username = '';
@@ -20,9 +20,11 @@ export class LoginComponent {
     console.log('Username:', this.username);
     console.log('Password:', this.password);
 
-    // Aquí puedes realizar la lógica de autenticación
-    // y asignar el nombre de usuario a la propiedad loggedInUser después de iniciar sesión.
-    // Por ahora, simplemente asignaremos el nombre de usuario ingresado.
+
     this.loggedInUser = this.username;
+    this.limpiar();
+  }
+  limpiar() {
+    throw new Error('Method not implemented.');
   }
 }

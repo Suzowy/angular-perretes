@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { LogoutComponent } from './logout/logout.component';
-import { LoginComponent } from './login/login.component';
-import { RegistroComponent } from './registro/registro.component';
+import { HomeComponent } from './pages/home/home.component';
+import { LogoutComponent } from './pages/logout/logout.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegistroComponent } from './pages/registro/registro.component';
 import { ErrorPaginaComponent } from './errorPagina/errorPagina.component';
-import { AboutComponent } from './about/about.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { ContactComponent } from './contact/contact.component';
-import { CharactersComponent } from './characters/characters.component';
+import { AboutComponent } from './pages/about/about.component';
+import { WelcomeComponent } from './pages/welcome/welcome.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { CharactersComponent } from './pages/characters/characters.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },

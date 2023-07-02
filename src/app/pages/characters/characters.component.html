@@ -1,0 +1,25 @@
+<div class="titulos">
+<h3>Estos son nuestros perretes en adopcion</h3>
+<p>Pincha sobre una foto y rellena el formulario para poder conocer a tu nuevo amigo.</p>
+</div>
+<div class="search" >
+<label  for="size-input">Buscar por tamaño:</label>
+<input type="text" id="size-input" [(ngModel)]="searchSize">
+</div>
+<div class="container">
+  <div class="search-container">
+  </div>
+  <div class="card" *ngFor="let dog of dogImages">
+    <a href="/contact" *ngIf="matchesSearchSize(dog)">
+      <source srcset="..." type="image/svg+xml">
+      <img [src]="dog.image" class="foto" alt="Perro">
+      <p>Raza: {{ dog.breed }}</p>
+      <p>Tamaño: {{ dog.size }}</p>
+    </a>
+  </div>
+</div>
+
+
+
+
+

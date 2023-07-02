@@ -1,0 +1,56 @@
+.content {
+  display: flex;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: first baseline;
+  color: rgb(101, 171, 232);
+  background-image: url(src\assets\images\perro3.png);
+  background-repeat: no-repeat;
+  background-position:right;
+  font-family: "Indie Flower", cursive;
+}
+form{
+  background-color: rgba(101, 171, 232, 0.45);
+  border-radius: 10px;
+  padding: 20px;
+  color: rgb(40, 40, 40);
+  border: 2px solid #ff728bff;
+  border-radius: 5px;
+  box-shadow: 0 5px 7px #7e607eff;
+}
+
+
+
+h3{
+padding: 30px;
+}
+.mensaje{
+margin-top: 20px;
+color: aliceblue;
+padding: 10px;
+font-weight: bold;
+background-color: #ff728bff;
+border-radius: 10px;
+}
+
+@media screen and (max-width: 767px) {
+ .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(src\assets\images\perro3.png);
+  background-position: bottom;
+  background-size: contain;
+  background-color: rgba(255, 255, 255, 0.846);
+  }
+  form{
+    background-color: rgba(101, 171, 232, 0.45);
+    border-radius: 10px;
+    padding: 20px;
+    color: rgb(40, 40, 40);
+    border: 2px solid #ff728bff;
+    border-radius: 5px;
+    box-shadow: 0 5px 7px #7e607eff;
+  }
+
+}

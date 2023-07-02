@@ -14,6 +14,7 @@ export class ContactComponent {
   leGustanLosPerros: boolean = false;
   mensaje: string = '';
 
+  mensajeEnviado: boolean = false;
 
 
   registrar() {
@@ -22,7 +23,11 @@ export class ContactComponent {
     console.log('Teléfono:', this.telefono);
     console.log('Le gustan los perros:', this.leGustanLosPerros);
     console.log('Mensaje:', this.mensaje);
+
+    this.mensajeEnviado = true;
+    this.limpiar();
   }
+
 
 
 
