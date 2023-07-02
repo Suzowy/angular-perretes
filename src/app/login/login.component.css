@@ -18,6 +18,11 @@ margin: 20px;
 font-weight: bold;
 
 }
+.mensaje{
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
 
 @media screen and (max-width: 767px) {
  .content {

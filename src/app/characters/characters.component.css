@@ -1,6 +1,14 @@
+
+/* Estilos para el contenedor */
+div {
+  display: flex; /* Permite alinear los elementos en una fila */
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+/* Estilos para las imágenes */
 img {
-  margin: 20px;
-  width: 30%;
-  height: 30%;
-  background-color: rgb(0, 0, 0);
+  margin-top: 20px; /* Espacio entre las imágenes */
+  width: 20%; /* Ancho de las imágenes */
+  height: 20%; /* Ajusta automáticamente la altura proporcionalmente */
+  background-color: rgb(0, 0, 0); /* Color de fondo opcional */
 }

@@ -6,7 +6,7 @@
   <form class="form" (ngSubmit)="register()">
     <div class="mb-3">
       <label for="userName" class="form-label">Nombre:</label>
-      <input type="text" id="userName" class="form-control" name="userName" required>
+      <input type="text" id="userName" class="form-control" [(ngModel)]="userName" name="userName" required>
     </div>
     <div class="mb-3">
       <label for="userLastname" class="form-label" >Apellido:</label>
@@ -24,7 +24,7 @@
       <label for="confirmPassword" class="form-label">Repetir contraseña:</label>
       <input type="password" id="confirmPassword" class="form-control" [(ngModel)]="confirmPassword" name="confirmPassword" required>
     </div>
-    <button type="button" class="btn btn-outline-info">Registro</button>
+    <button type="submit" class="btn btn-outline-info">Registro</button>
   </form>
   <div *ngIf="errorPasswords">
     <p>La contraseña no coincide</p>
