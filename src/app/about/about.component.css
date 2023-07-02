@@ -1,19 +1,26 @@
 
 .content {
   display: flex;
-  padding: 200px 16px;
-  max-width: 960px;
-  flex-direction: column;
-  background-color: rgb(235, 241, 239);
-  background-repeat: no-repeat;
-  background-position: left;
-  font-family: "Indie Flower", cursive;
+  padding: 120px 16px;
 
 }
-h2{
-margin: 30px;
-padding: 30px;
+.direccion{
+margin-top:70px;
 }
 
-
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+  .direccion{
+    margin-top:20px;
+    }
+    span{
+      font-size: 15px;
+    }
+    p{
+      font-size: 15px;
+    }
+.mapa{
+  width:100%;
+  height: auto;
+  margin-top:20px;
+  font-size: 10px;
+  }}
