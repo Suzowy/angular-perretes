@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FakeRegistrationService } from '../../services/fake-registration.service';
 
 @Component({
   selector: 'app-registro',
@@ -15,7 +16,7 @@ export class RegistroComponent {
   errorPasswords: boolean;
   pivoteName: string;
 
-  constructor() {
+  constructor(private registrationService: FakeRegistrationService) {
     this.email = '';
     this.password = '';
     this.confirmPassword = '';
@@ -26,25 +27,34 @@ export class RegistroComponent {
     this.pivoteName = '';
   }
 
-  register() {
-    console.log(this.userName);
-    console.log(this.userLastname);
-    console.log(this.email);
-    console.log(this.password);
-    console.log(this.confirmPassword);
 
-    if (this.password === this.confirmPassword) {
-      this.registrado = true;
-      this.pivoteName = this.userName;
-    } else {
-      console.log('La contraseña no coincide');
-      this.errorPasswords = true;
-    }
+    register() {
+      console.log(this.userName);
+      console.log(this.userLastname);
+      console.log(this.email);
+      console.log(this.password);
+      console.log(this.confirmPassword);
 
-    this.userName = '';
+      if (this.password === this.confirmPassword) {
+        const user = {
+          name: this.userName,
+          lastname: this.userLastname,
+          email: this.email,
+          password: this.password
+        };
+
+        this.registrationService.registerUser(user);
+        this.registrado = true;
+        this.pivoteName = this.userName;
+      } else {
+        console.log('La contraseña no coincide');
+        this.errorPasswords = true;
+
+
+        this.userName = '';
     this.userLastname = '';
     this.email = '';
     this.password = '';
     this.confirmPassword = '';
   }
-}
+}}

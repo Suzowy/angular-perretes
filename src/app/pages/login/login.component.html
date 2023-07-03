@@ -4,17 +4,19 @@
   <form class="form" (ngSubmit)="login()">
     <div class="mb-3">
       <label for="username" class="form-label">Usuario:</label>
-      <input type="text" id="username" class="form-control"[(ngModel)]="username" name="username" required>
+      <input type="text" id="username" class="form-control"[(ngModel)]="username" name="username" required placeholder="e-mail">
     </div>
     <div class="mb-3">
       <label for="password" class="form-label" >Contraseña:</label>
-      <input type="password" id="password" class="form-control"[(ngModel)]="password" name="password" required>
+      <input type="password" id="password" class="form-control"[(ngModel)]="password" name="password" required placeholder="contraseña">
     </div>
     <button type="submit" class="btn btn-outline-info">Iniciar sesion</button>
+    <div class="mensaje" *ngIf="loggedInUser">
+      <p>Bienvenido, {{ loggedInUser }}!</p>
+    </div>
+    <div *ngIf="loginError" class="mensaje">Usuario no registrado</div>
   </form>
-  <div class="mensaje "*ngIf="loggedInUser">
-    <p>Bienvenido, {{ loggedInUser }}!</p>
-  </div>
+
 
 
 

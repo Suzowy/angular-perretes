@@ -1,4 +1,3 @@
-
 .content {
   display: flex;
   margin: 100px auto 10px;
@@ -13,7 +12,7 @@
   background-size: contain;
   font-family: "Indie Flower", cursive;
 }
-.form{
+.form {
   background-color: rgba(101, 171, 232, 0.286);
   width: 20%;
   margin: 20px;
@@ -29,37 +28,40 @@
   font-weight: bold;
   font-family: "Indie Flower", cursive;
 }
-
-h2{
-  display: flex;
-  justify-content: center;
-margin: 20px;
-font-weight: bold;
+.form-control::placeholder {
+  color: rgba(72, 73, 73, 0.749);
+  font-style: italic;
+  font-weight: lighter;
 
 }
-.mensaje{
+h2 {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font-weight: bold;
+}
+.mensaje {
+  text-align: center;
+  width: 50%;
   margin-top: 20px;
   color: aliceblue;
   padding: 10px;
   font-weight: bold;
-  background-color: #ff728bff;
+  background-color: rgba(255, 114, 140, 0.718);
   border-radius: 10px;
-  }
+}
 
 @media screen and (max-width: 767px) {
- .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: url(src\assets\images\perro5.png);
-  background-position:bottom;
-  background-size: contain;
-
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(src\assets\images\perro5.png);
+    background-position: bottom;
+    background-size: contain;
   }
 
-  .form{
+  .form {
     width: 60%;
-
   }
-
 }

@@ -1,25 +1,37 @@
-
 .content {
   display: flex;
-
+  background-color: rgba(126, 96, 126, 0.119);
+  color: rgb(40, 40, 40);
+  border: 2px solid #ff728bff;
+  border-radius: 5px;
+  box-shadow: 0 7px 7px #7e607eff;
+  padding: 20px;
 }
-.direccion{
-margin-top:70px;
+.direccion {
+  margin-top: 70px;
+}
+.mapa {
+  width: 500px;
+  height: 400px;
+  margin: 20px;
+  padding: 2px;
+  background-color: rgb(157, 248, 240);
 }
 
 @media screen and (max-width: 767px) {
-  .direccion{
-    margin-top:20px;
-    }
-    span{
-      font-size: 15px;
-    }
-    p{
-      font-size: 15px;
-    }
-.mapa{
-  width:100%;
-  height: auto;
-  margin-top:20px;
-  font-size: 10px;
-  }}
+  .direccion {
+    margin-top: 20px;
+  }
+  span {
+    font-size: 15px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .mapa {
+    width: 95%;
+    height: 300px;
+    margin-top: 20px;
+    font-size: 10px;
+  }
+}

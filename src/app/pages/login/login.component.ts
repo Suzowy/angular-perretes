@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FakeRegistrationService } from '../../services/fake-registration.service';
 
 @Component({
   selector: 'app-login',
@@ -9,22 +10,35 @@ export class LoginComponent {
   username: string;
   password: string;
   loggedInUser: string = '';
+  loginError: boolean = false;
 
-  constructor() {
+  constructor(private registrationService: FakeRegistrationService) {
     this.username = '';
     this.password = '';
     this.loggedInUser = '';
+    this.loginError = false;
   }
 
   login() {
     console.log('Username:', this.username);
     console.log('Password:', this.password);
 
+    const registeredUsers = this.registrationService.getRegisteredUsers();
+    const user = registeredUsers.find((registeredUser: any) => registeredUser.email === this.username && registeredUser.password === this.password);
 
-    this.loggedInUser = this.username;
-    this.limpiar();
+    if (user) {
+      console.log('Inicio de sesión exitoso');
+      this.loggedInUser = user.name; // Utiliza el nombre del usuario registrado
+      this.loginError = false;
+      this.limpiar();
+    } else {
+      console.log('Inicio de sesión fallido. Usuario no registrado o credenciales incorrectas');
+      this.loginError = true;
+    }
   }
+
   limpiar() {
-    throw new Error('Method not implemented.');
+    this.username = '';
+    this.password = '';
   }
 }

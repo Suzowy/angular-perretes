@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 
-
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-
 export class ContactComponent {
   nombre: string = '';
   email: string = '';
@@ -15,7 +13,7 @@ export class ContactComponent {
   mensaje: string = '';
 
   mensajeEnviado: boolean = false;
-
+  errorFormulario: boolean = false;
 
   registrar() {
     console.log('Nombre:', this.nombre);
@@ -24,12 +22,15 @@ export class ContactComponent {
     console.log('Le gustan los perros:', this.leGustanLosPerros);
     console.log('Mensaje:', this.mensaje);
 
-    this.mensajeEnviado = true;
-    this.limpiar();
+    if (this.nombre.trim() === '' || this.email.trim() === '' || this.telefono.trim() === '' || this.mensaje.trim() === '') {
+      this.errorFormulario = true;
+      console.log('Faltan campos por completar');
+    } else {
+      this.mensajeEnviado = true;
+      this.errorFormulario = false;
+      this.limpiar();
+    }
   }
-
-
-
 
   limpiar() {
     this.nombre = '';
@@ -37,6 +38,5 @@ export class ContactComponent {
     this.telefono = '';
     this.leGustanLosPerros = false;
     this.mensaje = '';
-
   }
 }

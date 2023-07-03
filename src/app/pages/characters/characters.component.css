@@ -1,34 +1,36 @@
 .titulos {
   height: 600px;
-  text-align:center;
-  padding:30px;
+  text-align: center;
+  padding: 30px;
   background-image: url(src\assets\cute-chihuahua-puppy-peeking-cartoon-illustration-vector.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
-h3{
+h3 {
   text-decoration-line: underline;
   padding: 20px;
-  font-size: 20px;
+  font-size: 40px;
 }
 
-.search{
+.search {
+  padding: 20px;
   display: flex;
   justify-content: center;
-  margin: 20px;
   font-family: "Indie Flower", cursive;
   font-size: 20px;
   color: #000000;
-
 }
-.container{
+.form-control {
+  margin-left: 20px;
+  width: 15%;
+}
+
+.container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-
 }
 .card {
   display: flex;
@@ -38,33 +40,28 @@ h3{
   width: 20%;
   height: auto;
   margin: 10px;
-  background-color:rgba(200, 225, 234, 0.46) ;
+  background-color: rgba(200, 225, 234, 0.46);
   border: 1px solid #ff728bff;
   border-radius: 5px;
   box-shadow: 0 5px 7px #7e607eff;
-
-
 }
 .card:hover {
-  transform: translateY(-0.40rem);
+  transform: translateY(-0.4rem);
   box-shadow: 0px 5px 10px #ff728bff;
 }
 
 .foto {
-  width:100%;
-  height:auto;
+  width: 100%;
+  height: auto;
   border: 1px solid #ff728bff;
   border-radius: 5px;
 }
 
-
 @media screen and (max-width: 767px) {
-
   .titulos {
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     padding: 10px;
-
   }
   .titulos h3,
   .titulos p {
@@ -72,42 +69,40 @@ h3{
     font-weight: bold;
   }
 
-  .container{
+  .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-
   }
   .card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    width:30%;
+    width: 30%;
     height: auto;
     margin: 5px;
-    background-color:rgba(200, 225, 234, 0.46) ;
+    background-color: rgba(200, 225, 234, 0.46);
     border: 1px solid #ff728bff;
     border-radius: 5px;
-    box-shadow: 0 5px 7px ;
-
+    box-shadow: 0 5px 7px;
   }
-  .search{
+  .search {
+    font-size: 15px;
+  }
+  .form-control {
+    width: 50%;
+  }
+
+  .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: 5px;
-    font-family: "Indie Flower", cursive;
+  }
+
+  p {
+    margin-top: 10px;
     font-size: 15px;
     color: #7e607eff;
-
   }
-
-p{
-  margin-top: 10px;
-  font-size: 10px;
-  color: #7e607eff;
-}
-
-
 }

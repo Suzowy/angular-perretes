@@ -1,9 +1,24 @@
 
+.toggler-icon{
+background-color: aqua;
+margin-left: 20px;
+}
+.nav-item{
+  display: flex;
+  margin-left:30px;
+  padding: 15px;
+  font-family: "Indie Flower", cursive;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 767px) {
 
 .nav-item{
   display: flex;
-  margin-right: 10px;
+  margin-left:5px;
   padding: 10px;
   font-family: "Indie Flower", cursive;
   font-size: 20px;
+}
+
 }
