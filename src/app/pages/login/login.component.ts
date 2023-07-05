@@ -28,13 +28,14 @@ export class LoginComponent {
 
     if (user) {
       console.log('Inicio de sesión exitoso');
-      this.loggedInUser = user.name; // Utiliza el nombre del usuario registrado
+      this.loggedInUser = user.name; // nombre del usuario registrado
       this.loginError = false;
       this.limpiar();
     } else {
-      console.log('Inicio de sesión fallido. Usuario no registrado o credenciales incorrectas');
+      console.log('Inicio de sesión fallido. Usuario no registrado o  incorrecto');
       this.loginError = true;
     }
+
   }
 
   limpiar() {
