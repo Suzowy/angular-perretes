@@ -35,7 +35,6 @@ export class LoginComponent {
       console.log('Inicio de sesión fallido. Usuario no registrado o  incorrecto');
       this.loginError = true;
     }
-
   }
 
   limpiar() {
