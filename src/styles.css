@@ -2,8 +2,17 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat+Alternates:ital@1&family=Satisfy&display=swap");
 
+.title{
+  width:100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #7e607eff;
+}
+
 h1 {
-  font-family: "Indie Flower", cursive;
+  font-family: 'Pacifico', cursive;
   font-size: 50px;
   font-weight: 800;
   color: #ff728bff;
@@ -54,7 +63,7 @@ span {
 
 .content {
   display: flex;
-  margin: 82px auto 32px;
+  margin: 100px auto 100px;
   padding: 0 16px;
   max-width: 960px;
   flex-direction: column;
@@ -74,12 +83,7 @@ svg.material-icons:not(:last-child) {
   fill: #0ed2ec;
 }
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 16px;
-}
+
 
 .card {
   all: unset;
@@ -97,42 +101,27 @@ svg.material-icons:not(:last-child) {
   background-color: rgba(126, 96, 126, 0.255);
 }
 
-.card-container .card:not(:last-child) {
-  margin-right: 3;
-}
 
 .card.card-small {
   height: auto;
   width: 100px;
+
 }
 
-.card-container .card:not(.highlight-card) {
+.card-container-big  {
   margin-right: 3;
   cursor: pointer;
 }
 
-.card-container .card:not(.highlight-card):hover {
+.card-container-big .card:not(.highlight-card):hover {
   transform: translateY(-7px);
   box-shadow: 0 10px 10px #7e607eff;
 }
 
-.card-container .card:not(.highlight-card):hover .material-icons path {
+.card-container-big  .card:not(.highlight-card):hover .material-icons path {
   fill: #ff728bff;
 }
 
-.card.highlight-card {
-  background-color: #755b75;
-  color: white;
-  border: none;
-  width: 100%;
-  justify-content: center;
-}
-
-.card.card.highlight-card span {
-  color: rgb(255, 255, 255);
-  border-radius: 2px;
-  margin: 20px;
-}
 
 .circle-link {
   height: 50px;
@@ -194,11 +183,10 @@ svg.material-icons:not(:last-child) {
   box-shadow: 0px 10px 7px #ff0000ff;
 }
 
-footer a {
-  background-color: #c8e1eaff;
-  padding: 40px;
+footer{
+  background-color: #7e607eff;
+  padding: 20px;
   width:100%;
-  color: rgb(0, 0, 0);
   font-family: "Indie Flower", cursive;
   font-weight: 800;
   display: flex;
@@ -208,7 +196,7 @@ footer a {
 
 .github-star-badge {
   color: #ffffff;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-size: 12px;
   padding: 3px 10px;

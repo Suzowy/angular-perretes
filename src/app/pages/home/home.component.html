@@ -3,13 +3,10 @@
 
 <!-- content -->
 <div class="content" role="main">
-    <img src="https://i.pinimg.com/originals/63/d4/d5/63d4d5e524d1efc3f9e8fb9bd5d09f76.png" alt="perro corazon"
-      width=300 height=auto />
-  <h1>La protectora</h1>
-  <p>¿Por donde empezamos?</p>
+    <h2>¿Por donde empezamos?</h2>
 
 <!-- cartas -->
-  <div class="card-container">
+  <div class="card-container-big">
 
     <a class="card"  [routerLink]="['/about']">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -57,13 +54,13 @@
       </svg>
     </a>
   </div>
-
+  <div class="content" role="main">
   <h3>Espera, aún no hemos acabado.</h3>
   <p>¿Que más puedes hacer?</p>
 
   <input type="hidden" #selection />
 
-  <div class="card-container">
+  <div class="card-container-small">
     <button class="card card-small" (click)="selection.value = 'component'" tabindex="0">
       <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
@@ -85,7 +82,7 @@
       <span></span>
     </button>
   </div>
-
+</div>
   <!-- Links -->
   <div class="card-container">
 

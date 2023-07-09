@@ -2,17 +2,18 @@
 
 
 <div class="content">
-  <h3>Registro</h3>
+  </div>
+  <h2>Registro</h2>
   <form class="form" (ngSubmit)="register()">
-    <div class="mb-3">
+    <div>
       <label for="userName" class="form-label">Nombre:</label>
       <input type="text" id="userName" class="form-control" [(ngModel)]="userName" name="userName" required>
     </div>
-    <div class="mb-3">
+    <div >
       <label for="userLastname" class="form-label" >Apellido:</label>
       <input type="text" id="userLastname" class="form-control" [(ngModel)]="userLastname" name="userLastname" required>
     </div>
-    <div class="mb-3">
+    <div >
       <label for="email" class="form-label">Email:</label>
       <input type="email" id="email" class="form-control" [(ngModel)]="email" name="email" required>
     </div>
@@ -20,18 +21,19 @@
       <label for="password" class="form-label" >Contraseña:</label>
       <input type="password" id="password" class="form-control" [(ngModel)]="password" name="password" required>
     </div>
-    <div class="mb-3">
+    <div >
       <label for="confirmPassword" class="form-label">Repetir contraseña:</label>
       <input type="password" id="confirmPassword" class="form-control" [(ngModel)]="confirmPassword" name="confirmPassword" required>
     </div>
     <button type="submit" class="btn btn-outline-info">Registro</button>
-  </form>
-  <div *ngIf="errorPasswords">
-    <p>La contraseña no coincide</p>
-  </div>
+    <div *ngIf="errorPasswords">
+      <p>La contraseña no coincide</p>
+    </div>
 
-  <div class="mensaje" *ngIf="registrado">
-    <p>Usuario registrado con éxito. Gracias! {{pivoteName}}</p>
-  </div>
-</div>
+    <div class="mensaje" *ngIf="registrado">
+      <p>Te has registrado con éxito. Gracias! {{pivoteName}}</p>
+    </div>
+  </form>
+
+
 

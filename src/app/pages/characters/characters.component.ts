@@ -21,7 +21,7 @@ export class CharactersComponent implements OnInit {
   }
 
   getDogImages() {
-    const url = 'https://dog.ceo/api/breeds/image/random/50';
+    const url = 'https://dog.ceo/api/breeds/image/random/20';
 
     this.http.get<any>(url).subscribe(data => {
       if (data && data.status === 'success') {
@@ -46,15 +46,12 @@ export class CharactersComponent implements OnInit {
 
   getSizeFromBreed(breed: string): string {
     // Asigna un tamaño basado en la raza
-    // Puedes implementar tu lógica aquí para asignar el tamaño según la raza
-    // Por ejemplo, puedes utilizar un switch o un objeto de mapeo
-    // En este ejemplo, asignaremos un tamaño aleatorio solo para demostración
     const sizes = ['Pequeño', 'Mediano', 'Grande'];
     return sizes[Math.floor(Math.random() * sizes.length)];
   }
   matchesSearchSize(dog: { image: string, breed: string, size: string }): boolean {
     if (this.searchSize === '') {
-      return true; // No se ha ingresado ningún tamaño para buscar, mostrar todas las imágenes
+      return true;
     }
     return dog.size.toLowerCase().includes(this.searchSize.toLowerCase());
   }

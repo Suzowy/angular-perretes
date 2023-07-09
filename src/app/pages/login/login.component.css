@@ -1,22 +1,19 @@
 .content {
   display: flex;
-  margin: 100px auto 10px;
-  padding: 180px 16px;
+  margin: 5px auto 5px;
+  padding: 150px;
   max-width: 960px;
   color: rgb(163, 163, 163);
-  font-weight: bold;
-  align-items: start;
-  background-image: url(src\assets\images\perro5.png);
+  background-image: url(src\assets\images\istockphoto-1389534392-612x612.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  font-family: "Indie Flower", cursive;
 }
 .form {
   background-color: rgba(101, 171, 232, 0.286);
   width: 20%;
   margin: 20px;
-  padding: 10px;
+  padding: 20px;
   color: rgb(40, 40, 40);
   border: 2px solid #ff728bff;
   border-radius: 5px;
@@ -28,12 +25,7 @@
   font-weight: bold;
   font-family: "Indie Flower", cursive;
 }
-.form-control::placeholder {
-  color: rgba(72, 73, 73, 0.749);
-  font-style: italic;
-  font-weight: lighter;
 
-}
 h2 {
   display: flex;
   justify-content: center;
@@ -42,7 +34,7 @@ h2 {
 }
 .mensaje {
   text-align: center;
-  width: 50%;
+  width: 100%;
   margin-top: 20px;
   color: aliceblue;
   padding: 10px;
@@ -52,16 +44,10 @@ h2 {
 }
 
 @media screen and (max-width: 767px) {
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(src\assets\images\perro5.png);
-    background-position: bottom;
-    background-size: contain;
-  }
 
   .form {
-    width: 60%;
+    width: 70%;
+   margin-bottom: 50px;
+
   }
 }

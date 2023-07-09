@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { FakeRegistrationService } from '../../services/fake-registration.service';
 
 @Component({
@@ -11,12 +12,16 @@ export class LoginComponent {
   password: string;
   loggedInUser: string = '';
   loginError: boolean = false;
+  isUserRegistered: boolean = false;
 
-  constructor(private registrationService: FakeRegistrationService) {
+  constructor(private registrationService: FakeRegistrationService, private router: Router) {
     this.username = '';
     this.password = '';
-    this.loggedInUser = '';
-    this.loginError = false;
+
+    const registeredUsers = this.registrationService.getRegisteredUsers();
+    const user = registeredUsers.find((registeredUser: any) => registeredUser.email === this.username);
+
+    this.isUserRegistered = !!user; // Verifica si el usuario existe en la lista de usuarios registrados
   }
 
   login() {
@@ -30,15 +35,21 @@ export class LoginComponent {
       console.log('Inicio de sesión exitoso');
       this.loggedInUser = user.name; // nombre del usuario registrado
       this.loginError = false;
-      this.limpiar();
+
     } else {
-      console.log('Inicio de sesión fallido. Usuario no registrado o  incorrecto');
+      console.log('Inicio de sesión fallido. Usuario no registrado o incorrecto');
       this.loginError = true;
     }
+    this.limpiar();
   }
 
   limpiar() {
     this.username = '';
     this.password = '';
+    this
+  }
+
+  redirectToRegistration() {
+    this.router.navigateByUrl('/registro');
   }
 }

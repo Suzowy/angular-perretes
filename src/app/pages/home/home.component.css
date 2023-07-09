@@ -1,11 +1,28 @@
-body{
+.card-container-big{
   background-image: url(https://img.freepik.com/vector-premium/doodle-perros-arte-lineal-colorear-ilustracion-libros_40453-2360.jpg);
   background-position:center;
+  background-size: contain;
   background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.card-container-small {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
 }
 
 @media screen and (max-width: 767px) {
 
-  body{
+  .card-container-big{
     background-image: none;
   }}
