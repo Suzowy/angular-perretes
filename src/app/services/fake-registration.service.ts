@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class FakeRegistrationService {
+  isLoggedIn: boolean = false;
   private registeredUsers: any[] = [];
 
   registerUser(user: any) {

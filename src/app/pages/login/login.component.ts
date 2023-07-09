@@ -1,3 +1,4 @@
+// LoginComponent
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { FakeRegistrationService } from '../../services/fake-registration.service';
@@ -35,6 +36,7 @@ export class LoginComponent {
       console.log('Inicio de sesión exitoso');
       this.loggedInUser = user.name; // nombre del usuario registrado
       this.loginError = false;
+      this.registrationService.isLoggedIn = true; // Establecer isLoggedIn en true en el servicio
 
     } else {
       console.log('Inicio de sesión fallido. Usuario no registrado o incorrecto');
@@ -46,7 +48,6 @@ export class LoginComponent {
   limpiar() {
     this.username = '';
     this.password = '';
-    this
   }
 
   redirectToRegistration() {

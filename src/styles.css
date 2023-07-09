@@ -4,6 +4,7 @@
   width:100%;
   height: auto;
   display: flex;
+  padding: 20px;
   justify-content: center;
   background-color: #7e607eff;
 }
@@ -51,24 +52,24 @@ span {
 
 .content {
   display: flex;
-  margin: 100px auto 100px;
+  margin: 50px auto 50px;
   padding: 0 16px;
   max-width: 960px;
   flex-direction: column;
   align-items: center;
 }
 
-svg.material-icons {
+.material-icons {
   height: 30px;
   width: 30px;
 }
 
-svg.material-icons:not(:last-child) {
+.material-icons:not(:last-child) {
   margin-right: 8px;
 }
 
-.card svg.material-icons path {
-  fill: #0ed2ec;
+.material-icons path {
+  fill:rgb(117, 219, 237);
 }
 
 
@@ -86,29 +87,44 @@ svg.material-icons:not(:last-child) {
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease-in-out;
-  background-color: rgba(91, 74, 91, 0.517);
-}
-
-
-.card.card-small {
-  height: auto;
-  width: 100px;
-
-}
-
-.card-container-big  {
-  margin-right: 3;
+  background-color: rgba(106, 80, 106, 0.517);
   cursor: pointer;
 }
+
+
+.card-small {
+  all: unset;
+  border-radius: 4px;
+  border: 2px solid #01fefe;
+  height: auto;
+  width: 50%;
+  margin: 10px 10px 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(255, 114, 140, 0.822);
+  justify-content: space-around;
+}
+.card-small:hover{
+  transform: translateY(-7px);
+  box-shadow: 0 10px 10px #7e607eff;
+}
+
+
+
 
 .card-container-big .card:not(.highlight-card):hover {
   transform: translateY(-7px);
   box-shadow: 0 10px 10px #7e607eff;
 }
 
-.card-container-big  .card:not(.highlight-card):hover .material-icons path {
-  fill: #ff728bff;
+.card-container-big  :hover .material-icons path {
+  fill: rgb(42, 86, 246);
 }
+
 
 
 .circle-link {
