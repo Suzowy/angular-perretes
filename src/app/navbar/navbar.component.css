@@ -1,47 +1,19 @@
 
-.toggler-icon{
-background-color: aqua;
-margin-left: 20px;
-}
+
 .nav-item{
   display: flex;
-  margin-left:30px;
   padding: 15px;
-  font-family: "Indie Flower", cursive;
+  font-family: 'Amatic SC', cursive;
   font-size: 25px;
-}
-.navbar {
-  padding: 10px;
-}
-
-.navbar-toggler {
-  border: none;
 }
 
 .navbar-toggler-icon {
-  background-color: #fff;
+  border-radius: 5px;
 }
 
-.navbar-nav .nav-link {
-  color: #000;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #00afe6;
-}
-
-.link-info {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-.link-info svg {
-  margin-right: 5px;
-}
 
 .link-info:hover svg {
-  fill: #00afe6;
+  fill: #af86d4ff;
 }
 
 
@@ -49,9 +21,8 @@ margin-left: 20px;
 
 .nav-item{
   display: flex;
-  margin-left:5px;
+  margin-left:2px;
   padding: 10px;
-  font-family: "Indie Flower", cursive;
   font-size: 20px;
 }
 
